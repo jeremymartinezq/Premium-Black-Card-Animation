@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Black Card - Exclusive Member</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="credit-card">
+                <div class="card-front">
+                    <div class="card-type">
+                        <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png" alt="Visa" class="card-logo-img">
+                    </div>
+                    <div class="card-chip">
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                        <div class="chip-line"></div>
+                        <div class="chip-main"></div>
+                    </div>
+                    <div class="card-number-display">
+                        <div class="number-group">#### #### #### ####</div>
+                    </div>
+                    <div class="card-holder-container">
+                        <div class="card-holder-label">Card Member</div>
+                        <div class="card-holder-name">FULL NAME</div>
+                    </div>
+                    <div class="card-expiration-container">
+                        <div class="card-expiration-label">Valid Thru</div>
+                        <div class="card-expiration-date">MM/YY</div>
+                    </div>
+                    <div class="elite-marker">EXCLUSIVE</div>
+                </div>
+                <div class="card-back">
+                    <div class="card-stripe"></div>
+                    <div class="card-signature-container">
+                        <div class="signature-line"></div>
+                        <div class="card-cvv">
+                            <label>CVV</label>
+                            <div class="cvv-display">***</div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p>This premium metal card is exclusively reserved for top-tier members. Use according to your cardholder agreement. 24/7 concierge: +1 800 555 0199</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-form">
+            <h2>MEMBER DETAILS</h2>
+            <form id="credit-card-form">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" maxlength="19" placeholder="**** **** **** ****">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardName">Card Member</label>
+                    <input type="text" id="cardName" placeholder="Full Name">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group expiry-group">
+                        <label for="cardExpiry">Valid Thru</label>
+                        <input type="text" id="cardExpiry" maxlength="5" placeholder="MM/YY">
+                    </div>
+                    
+                    <div class="form-group cvv-group">
+                        <label for="cardCvv">Security Code</label>
+                        <input type="text" id="cardCvv" maxlength="3" placeholder="***">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardType">Card Type</label>
+                    <select id="cardType">
+                        <option value="visa">Visa Infinite</option>
+                        <option value="mastercard">World Elite Mastercard</option>
+                        <option value="amex">American Express Centurion</option>
+                        <option value="discover">Discover it® Elite</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="submit-button">CONFIRM DETAILS</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
